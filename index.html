@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="microsoft_to_do.ico" type="image/x-icon" />
+    <!-- bootstrap Links Start -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- bootstrap Links End -->
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container page text-center col-12 p-3 rounder">
+    <div class="container col-xs-12 col-sm-12  col-md-8 col-lg-6 rounded p-3 mt-5 shadow">
+        <div class="mb-3 todo-form bg-primary shadow p-5">
+          <label for="" class="form-label text-light fw-bold">Add a New  Task </label>
+          <div class="d-flex">
+            <input type="text" class="form-control me-4" id="new-task" aria-describedby="helpId" placeholder="Task to be done..">
+          <button type="button" onclick="addTask()" class="btn-success btn " >Add</button></div>
+        </div>
+    </div>
+    <ul class="container mb-2 col-xs-12 col-sm-12  col-md-8 col-lg-6 rounded p-3 mt-5 shadow hidden" id="list"></ul>
+    <button type="button" onclick="removeAll()" id="removeAll" class="btn-danger btn mt-2 hidden" >Remove All</button><br>
+<small  class="form-text text-muted m-1 mt-5 d-flex align-items-center justify-content-center p-0">Created by <a class="nav-link text-muted mx-1 px-0" href="https://www.linkedin.com/in/ousskhayi" target="_blank">oussKhayi</a> &copy; 2022-23</small>
+
+</div>
+    <script src="./advancedMain.js"></script>
+</body>
+</html>
